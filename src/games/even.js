@@ -1,6 +1,6 @@
-import readlineSync from "readline-sync";
-import getRandomInteger from "../utils.js";
-import getUserName from "../index.js";
+import readlineSync from 'readline-sync';
+import getRandomInteger from '../utils.js';
+import getUserName from '../index.js';
 
 export const createQuestion = () => {
   const number = getRandomInteger(0, 100);
@@ -10,7 +10,7 @@ export const createQuestion = () => {
 };
 
 export const checkCorrectAnswer = (answer, userAnswer) => {
-  const correctAnswer = answer % 2 === 0 ? "yes" : "no";
+  const correctAnswer = answer % 2 === 0 ? 'yes' : 'no';
   return {
     isCorrect: userAnswer.toLowerCase() === correctAnswer,
     correctAnswer,
@@ -23,11 +23,11 @@ export const start = () => {
     const { answer, question } = createQuestion(); // создать вопрос
 
     console.log(question);
-    const userAnswer = readlineSync.question("Your answer: "); // получить ответ usera
+    const userAnswer = readlineSync.question('Your answer: '); // получить ответ usera
 
     const { correctAnswer, isCorrect } = checkCorrectAnswer(answer, userAnswer); // проверить ответ usera
     if (isCorrect) {
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`,

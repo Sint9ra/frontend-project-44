@@ -1,4 +1,4 @@
-import getUserName from "./index.js";
+import getUserName from './index.js';
 
 const startBrainGame = () => {
   getUserName();

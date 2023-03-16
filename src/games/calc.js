@@ -1,14 +1,14 @@
-import readlineSync from "readline-sync";
-import getRandomInteger from "../utils.js";
-import getUserName from "../index.js";
+import readlineSync from 'readline-sync';
+import getRandomInteger from '../utils.js';
+import getUserName from '../index.js';
 
 const compute = (firstNumber, secondNumber, sign) => {
   switch (sign) {
-    case "+":
+    case '+':
       return firstNumber + secondNumber;
-    case "-":
+    case '-':
       return firstNumber - secondNumber;
-    case "*":
+    case '*':
       return firstNumber * secondNumber;
     default:
       return null;
@@ -18,7 +18,7 @@ const compute = (firstNumber, secondNumber, sign) => {
 export const createQuestion = () => {
   const firstNumber = getRandomInteger(0, 10);
   const secondNumber = getRandomInteger(0, 10);
-  const signs = ["+", "-", "*"];
+  const signs = ['+', '-', '*'];
   const randomSign = signs[getRandomInteger(0, signs.length - 1)];
   const question = `Question: ${firstNumber} ${randomSign} ${secondNumber}`;
   const answer = compute(firstNumber, secondNumber, randomSign);
@@ -26,13 +26,13 @@ export const createQuestion = () => {
 };
 
 export const start = () => {
-  const userName = getUserName("What is the result of the expression?");
+  const userName = getUserName('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const { answer, question } = createQuestion();
     console.log(question);
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer.toString()) {
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. \nLet's try again, ${userName}!`,
