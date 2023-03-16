@@ -1,9 +1,9 @@
 import readlineSync from "readline-sync";
-import { getRandomInteger } from "../utils.js";
-import { getUserName } from "../index.js";
+import getRandomInteger from "../utils.js";
+import getUserName from "../index.js";
 
 const checkPrime = (number) => {
-  for (let i = 2; i <= number; i += 1) {
+  for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -12,8 +12,9 @@ const checkPrime = (number) => {
 };
 
 const makeRound = () => {
-  const question = getRandomInteger(2, 100);
-  const correctAnswer = checkPrime(question) ? "yes" : "no";
+  const number = getRandomInteger(2, 50);
+  const question = `${number}`;
+  const correctAnswer = checkPrime(number) ? "yes" : "no";
 
   return { question, correctAnswer };
 };

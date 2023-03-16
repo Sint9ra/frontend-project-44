@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
-import { getRandomInteger } from "../utils.js";
-import { getUserName } from "../index.js";
+import getRandomInteger from "../utils.js";
+import getUserName from "../index.js";
 
 export const createQuestion = () => {
   const number = getRandomInteger(0, 100);
@@ -17,7 +17,7 @@ export const checkCorrectAnswer = (answer, userAnswer) => {
   };
 };
 
-export const startEvenGame = () => {
+export const start = () => {
   const userName = getUserName('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const { answer, question } = createQuestion(); // создать вопрос

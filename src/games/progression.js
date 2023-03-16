@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
-import { getRandomInteger } from "../utils.js";
-import { getUserName } from "../index.js";
+import getRandomInteger from "../utils.js";
+import getUserName from "../index.js";
 
 const makeProgression = (startNum, length, step) => {
   const numArr = [];

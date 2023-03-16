@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
 
-export const getUserName = (action) => {
+const getUserName = (action) => {
   const userName = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${userName}!`);
   if (action) {
@@ -8,3 +8,5 @@ export const getUserName = (action) => {
   }
   return userName;
 };
+
+export default getUserName;

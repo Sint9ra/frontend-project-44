@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
-import { getUserName } from "../index.js";
-import { getRandomInteger } from "../utils.js";
+import getRandomInteger from "../utils.js";
+import getUserName from "../index.js";
 
 const compute = (firstNumber, secondNumber, sign) => {
   switch (sign) {

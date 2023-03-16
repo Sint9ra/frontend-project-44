@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
-import { getRandomInteger } from "../utils.js";
-import { getUserName } from "../index.js";
+import getRandomInteger from "../utils.js";
+import getUserName from "../index.js";
 
 const findGcd = (num1, num2) => {
   if (num2 === 0) {
