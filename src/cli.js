@@ -1,6 +1,6 @@
-import readlineSync from "readline-sync";
 import getUserName from "./index.js";
 
-export const startBrainGame = () => {
+const startBrainGame = () => {
   getUserName();
 };
+export default startBrainGame;
