@@ -12,7 +12,7 @@ const checkPrime = (number) => {
 };
 
 const makeRound = () => {
-  const number = getRandomInteger(2, 50);
+  const number = getRandomInteger(2, 16);
   const question = `${number}`;
   const correctAnswer = checkPrime(number) ? 'yes' : 'no';
 
