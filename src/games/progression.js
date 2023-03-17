@@ -1,6 +1,5 @@
-import readlineSync from 'readline-sync';
+import play from '../index.js';
 import getRandomInteger from '../utils.js';
-import getUserName from '../index.js';
 
 const makeProgression = (startNum, length, step) => {
   const numArr = [];
@@ -10,33 +9,19 @@ const makeProgression = (startNum, length, step) => {
   return numArr;
 };
 
+const task = 'What number is missing in the progression?';
+
 const game = () => {
   const startNum = getRandomInteger(1, 50);
   const step = getRandomInteger(1, 5);
   const length = 10;
 
   const result = makeProgression(startNum, length, step);
-  const answer = result[step];
+  const correctAnswer = result[step];
   result[step] = '..';
   const question = result.join(' ');
-  return { question, answer };
+  return { question, correctAnswer };
 };
 
-const start = () => {
-  const userName = getUserName('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
-    const { answer, question } = game();
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === String(answer)) {
-      console.log('Correct!');
-    } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. \nLet's try again, ${userName}!`,
-      );
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
-};
-export default start;
+const res = () => play(task, game);
+export default res;
