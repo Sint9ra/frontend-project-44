@@ -9,7 +9,7 @@ export const createQuestion = () => {
   return { answer: number, question };
 };
 
-export const checkCorrectAnswer = (answer, userAnswer) => {
+export const CorrectAnswer = (answer, userAnswer) => {
   const correctAnswer = answer % 2 === 0 ? 'yes' : 'no';
   return {
     isCorrect: userAnswer.toLowerCase() === correctAnswer,
@@ -25,7 +25,7 @@ export const start = () => {
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: '); // получить ответ usera
 
-    const { correctAnswer, isCorrect } = checkCorrectAnswer(answer, userAnswer); // проверить ответ usera
+    const { correctAnswer, isCorrect } = CorrectAnswer(answer, userAnswer); // проверить ответ usera
     if (isCorrect) {
       console.log('Correct!');
     } else {

@@ -20,6 +20,7 @@ const makeRound = () => {
 };
 
 const start = () => {
+  console.log('Welcome to the Brain Games!');
   const userName = getUserName('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const { correctAnswer, question } = makeRound();
