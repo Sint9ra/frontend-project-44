@@ -6,27 +6,29 @@
 Project 'Brain Games'
 The project 'Brain Games' consists of five console games where the user must answer all questions correctly, in case of an incorrect answer, defeat is counted, and the game can be started again.
 
-<h2>Games</h2>:
+<h1>Games:</h2>
 <ul>
-<li>1.Calculator.</li>
-<li>2.Finding an even number.</li>
-<li>3.Determining the greatest common divisor.</li>
-<li>4.Finding a prime number.</li>
-<li>5.Progression.</li>
+<li>Calculator.</li>
+<li>Finding an even number.</li>
+<li>Determining the greatest common divisor.</li>
+<li>Finding a prime number.</li>
+<li>Progression.</li>
 </ul>
 
-How to Install:
-1.$ git clone https://github.com/Sint9ra/frontend-project-44
-2.$ make install
-3.$ npm link
+<h1>How to Install:</h2>
+<ul>
+<li>$ git clone https://github.com/Sint9ra/frontend-project-44</li>
+<li>$ make install</li>
+<li>$ npm link</li>
+</ul>
 
-Games description:
+<h1>Games description:</h2>
 
-1. Calculator.
-   The user is shown a random mathematical expression. The essence of the game is to calculate the sum of the expression and give the correct answer
+<h2>Calculator.</h1>
+</p>The user is shown a random mathematical expression. The essence of the game is to calculate the sum of the expression and give the correct answer.</p>
 
-Game launch:
-$ brain-calc
+<h3>Game launch:</h3>
+<p>$ brain-calc</p>
 
-Gameplay:
+<h3>Gameplay:</h3>
 <a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"> <img src="Клик"></a>
