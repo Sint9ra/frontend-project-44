@@ -24,11 +24,11 @@ The project 'Brain Games' consists of five console games where the user must ans
 
 <h1>Games description:</h2>
 
-<h2>1.Calculator.</h1>
+<h2>1.Calculator</h1>
 </p>The user is shown a random mathematical expression. The essence of the game is to calculate the sum of the expression and give the correct answer.</p>
 
 <h3>Game launch:</h3>
 <p>$ brain-calc</p>
 
 <h3>Gameplay:</h3>
-<img src="https://prnt.sc/M8gYd3YIXFuS">
+<a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"><img src="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0" /></a>
