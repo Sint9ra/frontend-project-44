@@ -6,12 +6,14 @@
 Project 'Brain Games'
 The project 'Brain Games' consists of five console games where the user must answer all questions correctly, in case of an incorrect answer, defeat is counted, and the game can be started again.
 
-Games:
-1.Calculator.
-2.Finding an even number.
-3.Determining the greatest common divisor.
-4.Finding a prime number.
-5.Progression.
+<h2>Games</h2>:
+<ul>
+<li>1.Calculator.</li>
+<li>2.Finding an even number.</li>
+<li>3.Determining the greatest common divisor.</li>
+<li>4.Finding a prime number.</li>
+<li>5.Progression.</li>
+</ul>
 
 How to Install:
 1.$ git clone https://github.com/Sint9ra/frontend-project-44
@@ -27,4 +29,4 @@ Game launch:
 $ brain-calc
 
 Gameplay:
-<a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"><img src="https://prnt.sc/uCo5jBTNz2CS" /></a>
+<a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"> <img src="Клик"></a>
