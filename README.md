@@ -31,4 +31,4 @@ The project 'Brain Games' consists of five console games where the user must ans
 <p>$ brain-calc</p>
 
 <h3>Gameplay:</h3>
-<a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"><img src="https://prnt.sc/1z_F1Q3fsWb5.jpg" /></a>
+<a href="https://asciinema.org/a/gTLQ49QkMTo8GUpR9buI4Nvf0"><img src="https://sun9-36.userapi.com/impg/ZYZn60PzZF1DePDh9C67rfzBEEpyK9fUT6mxLg/iUAXdisX4Mk.jpg?size=927x602&quality=96&sign=680e1088b8a45b91473d74fad73319d3&type=album" /></a>
