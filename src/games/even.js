@@ -12,5 +12,4 @@ const game = () => {
   return { question, correctAnswer };
 };
 
-const result = () => play(task, game);
-export default result;
+export default () => play(task, game);

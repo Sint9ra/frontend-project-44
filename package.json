@@ -2,8 +2,8 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Sint9ra/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Sint9ra/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "Brain Games - five console games",
+  "main": "src",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

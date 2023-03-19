@@ -16,7 +16,7 @@ const compute = (firstNumber, secondNumber, sign) => {
   }
 };
 
-const createQuestion = () => {
+const getData = () => {
   const firstNumber = getRandomInteger(0, 10);
   const secondNumber = getRandomInteger(0, 10);
   const signs = ['+', '-', '*'];
@@ -26,5 +26,4 @@ const createQuestion = () => {
   return { correctAnswer, question };
 };
 
-const result = () => play(task, createQuestion);
-export default result;
+export default () => play(task, getData);
