@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Sint9ra/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Sint9ra/frontend-project-44#readme"
+  "homepage": "https://github.com/Sint9ra/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
